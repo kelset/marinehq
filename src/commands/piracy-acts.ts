@@ -17,7 +17,10 @@ export const PiracyActs = [
   {
     name: 'admirals-orders',
     bounty: 3000,
-    description: 'Playing a Black deck, K.O. 5 characters through effect (e.g. Lucci\'s On-Play)',
+    description:
+      "Playing a Black deck, K.O. 5 characters through effect (e.g. Lucci's On-Play)",
+    category: 'Black'
+  },
   {
     name: 'this-is-my-age',
     bounty: 8000,
@@ -116,13 +119,14 @@ export const PiracyActs = [
     name: 'conqueror-haki',
     bounty: 5000,
     description:
-      'Have five different characters/ leader on the board that canonically have conqueror\'s haki',
+      "Have five different characters/ leader on the board that canonically have conqueror's haki",
     category: 'Multi-colour'
   },
   {
     name: 'shogun',
     bounty: 5000,
-    description: 'Have 4 different characters from the country of Wano on the board',
+    description:
+      'Have 4 different characters from the country of Wano on the board',
     category: 'Multi-colour'
   },
   {
@@ -142,13 +146,17 @@ export const PiracyActs = [
   {
     name: 'vinsmoke',
     bounty: 5000,
-    description: 'Transform 4 different Vinsmoke family members (Activation: Main)',
+    description:
+      'Transform 4 different Vinsmoke family members (Activation: Main)',
     category: 'Multi-colour'
   },
   {
     name: 'three-brothers',
     bounty: 7000,
-    description: 'Play the 3 brothers (adult version) on the same turn (Luffy, Ace, Sabo)',
+    description:
+      'Play the 3 brothers (adult version) on the same turn (Luffy, Ace, Sabo)',
+    category: 'Multi-colour'
+  },
   {
     name: 'whos-who',
     bounty: 5000,
@@ -168,7 +176,8 @@ export const PiracyActs = [
   {
     name: 'treasure-hunter',
     bounty: 1000,
-    description: 'Play 4 searches - could be character-based, event-based or even leader (must contain search in the effect)',
+    description:
+      'Play 4 searches - could be character-based, event-based or even leader (must contain search in the effect)',
     category: 'Generic'
   },
   {
