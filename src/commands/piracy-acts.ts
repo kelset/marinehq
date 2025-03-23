@@ -6,12 +6,22 @@ export const PiracyActs = [
     description: 'Play a 10-drop Purple Kaido and kill at least 7 characters',
     category: 'Purple'
   },
+  {
+    name: 'gentle-giant',
+    bounty: 5000,
+    description: 'Use all four of your Gum Gum Giant event cards',
+    category: 'Purple'
+  },
 
   // Black
   {
     name: 'admirals-orders',
     bounty: 3000,
     description: 'Playing a Black deck, K.O. 5 characters through effect (e.g. Lucci\'s On-Play)',
+  {
+    name: 'this-is-my-age',
+    bounty: 8000,
+    description: 'Play all four of your 10C Blackbeards',
     category: 'Black'
   },
 
@@ -26,6 +36,20 @@ export const PiracyActs = [
     name: 'hayai',
     bounty: 2000,
     description: 'Play 2 characters with Rush on the same turn',
+    category: 'Red'
+  },
+  {
+    name: 'divine-departure',
+    bounty: 3000,
+    description:
+      'Use the OP10 Divine Departure event to KO an Eustass Kid character',
+    category: 'Red'
+  },
+  {
+    name: 'king-of-pirates',
+    bounty: 6000,
+    description:
+      "Win the game by triggering Gol D Rogers' skill - not by damage",
     category: 'Red'
   },
 
@@ -70,6 +94,13 @@ export const PiracyActs = [
     name: 'king-of-hell',
     bounty: 5000,
     description: 'Successfully land all 3 swings with OP06-118 Zoro',
+    category: 'Green'
+  },
+  {
+    name: 'time-to-sleep',
+    bounty: 5000,
+    description:
+      'Rest/freeze the same opponent character three rounds in a row',
     category: 'Green'
   },
 
@@ -118,6 +149,11 @@ export const PiracyActs = [
     name: 'three-brothers',
     bounty: 7000,
     description: 'Play the 3 brothers (adult version) on the same turn (Luffy, Ace, Sabo)',
+  {
+    name: 'whos-who',
+    bounty: 5000,
+    description:
+      'While using a Punk Hazard leader, have 5 characters on the board who are body-swapped versions (ex. Sanji-nami, Chopper-sanji, Smoker-tashigi, ...)',
     category: 'Multi-colour'
   },
 
