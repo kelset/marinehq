@@ -45,11 +45,15 @@ Once these steps are complete, you can start the bot and enjoy running your own 
 
 If you want to improve the code, or add some new events to score, please check out [CONTRIBUTING](./CONTRIBUTING.md).
 
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
 ## Credits
 
-This Discord Bot was made by Hung Hoang for [Spellbound Games](https://spellboundgames.co.uk)' OPTCG community.
+This Discord Bot was created by Hung Hoang for [Spellbound Games](https://spellboundgames.co.uk)' OPTCG community.
 
 Projects leveraged by this bot:
 
-* [One Pie-e Poster Generator](https://github.com/YuskaWu/one-piece-wanted-poster) by YuskaWu
-* [discord-s](https://discord.js.org)
+- [One Piece Poster Generator](https://github.com/YuskaWu/one-piece-wanted-poster) by YuskaWu
+- [discord.js](https://discord.js.org)
