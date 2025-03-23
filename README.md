@@ -57,3 +57,7 @@ Projects leveraged by this bot:
 
 - [One Piece Poster Generator](https://github.com/YuskaWu/one-piece-wanted-poster) by YuskaWu
 - [discord.js](https://discord.js.org)
+
+The literal information presented on this site about One Piece is copyright Bandai Namco Entertainment, Bird Studio/Shueisha and Toei Animation respectively.
+
+This bot is not produced by, endorsed by, supported by, or affiliated with Bandai Namco Entertainment, Bird Studio/Shueisha or Toei Animation.
