@@ -13,12 +13,12 @@ export const PiracyActs = [
   {
     name: 'treasure-hunter',
     bounty: 1000,
-    description: 'Play 4 searches'
+    description: 'Play 4 searcher cards'
   },
   {
     name: 'admirals-orders',
     bounty: 3000,
-    description: 'Playing a Black deck, K.O. 5 characters through effect'
+    description: 'Playing a Black deck, K.O. 5 characters through effects'
   },
   {
     name: 'two-year-training',
@@ -28,13 +28,13 @@ export const PiracyActs = [
   {
     name: 'straw-hat',
     bounty: 5000,
-    description: 'Have 5 characters that are different Straw Hats on the board'
+    description: 'Have 5 characters on the board that are different Straw Hats'
   },
   {
     name: 'conqueror-haki',
     bounty: 5000,
     description:
-      'Have 5 different characters that canonically have Conquerors Haki'
+      'Have different 5 characters on the board that canonically have used Conquerors Haki'
   },
   {
     name: 'true-nakama',
@@ -42,9 +42,9 @@ export const PiracyActs = [
     description: 'Block for your teammate in Buddy Battle'
   },
   {
-    name: 'king',
+    name: 'local-king',
     bounty: 3000,
-    description: 'Win a tournament'
+    description: 'Win a local tournament'
   },
   {
     name: 'honesty-impact',
@@ -55,12 +55,12 @@ export const PiracyActs = [
     name: 'cat-burglar',
     bounty: 2000,
     description:
-      'Win a game with OP03-040 Nami Leader secondary win con'
+      'Win a game with OP03-040 Nami Leader secondary win condition: deck reaching zero cards'
   },
   {
     name: 'shogun',
     bounty: 3000,
     description:
-      'Have 5 different characters that are different Wano characters'
+      'Have 5 characters on the board that are different Wano people'
   }
 ];
