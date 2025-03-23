@@ -12,19 +12,32 @@ export const PiracyActs = [
     description: 'Use all four of your Gum Gum Giant event cards',
     category: 'Purple'
   },
+  {
+    name: 'all-according-to-keikaku',
+    bounty: 3000,
+    description:
+      'With Pluffy leader, go first, play Zoro-Juro ST18-004 on turn 2 and Luffy-Tarou ST18-005 plus San-Gorou ST18-003 on turn 3',
+    category: 'Purple'
+  },
 
   // Black
   {
     name: 'admirals-orders',
     bounty: 3000,
     description:
-      "Playing a Black deck, K.O. 5 characters through effect (e.g. Lucci's On-Play)",
+      "Playing a Lucci deck, K.O. 5 characters through effect",
     category: 'Black'
   },
   {
     name: 'this-is-my-age',
     bounty: 8000,
     description: 'Play all four of your 10C Blackbeards',
+    category: 'Black'
+  },
+  {
+    name: 'jack-of-all-trades',
+    bounty: 5000,
+    description: 'Using Jack OP08-084, remove from play a character with original cost of 8 or more',
     category: 'Black'
   },
 
@@ -83,6 +96,13 @@ export const PiracyActs = [
     bounty: 5000,
     description:
       'Have 4 different Vegapunk Satellite characters on the board whilst playing Vegapunk Leader',
+    category: 'Yellow'
+  },
+  {
+    name: 'no-life',
+    bounty: 2000,
+    description:
+      "Trash 2 of your opponent's life cards in one turn",
     category: 'Yellow'
   },
 
