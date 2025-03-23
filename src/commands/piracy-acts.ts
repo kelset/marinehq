@@ -40,7 +40,7 @@ export const PiracyActs = [
   {
     name: 'red-roc',
     bounty: 3000,
-    description: 'Bottom 3 characters with a Blue Event',
+    description: 'Bottom 3 characters with Blue event cards',
     category: 'Blue'
   },
 
@@ -48,7 +48,7 @@ export const PiracyActs = [
   {
     name: 'o-nami',
     bounty: 5000,
-    description: 'Successfully banish using O-Nami on-play ability',
+    description: 'Successfully banish a life card using O-Nami On Play ability',
     category: 'Yellow'
   },
   {
@@ -132,7 +132,7 @@ export const PiracyActs = [
   {
     name: 'treasure-hunter',
     bounty: 1000,
-    description: 'Play 4 searches (Leader abilities, card that puts more cards in your hand)',
+    description: 'Play 4 searches - could be character-based, event-based or even leader (must contain search in the effect)',
     category: 'Generic'
   },
   {
@@ -158,13 +158,13 @@ export const PiracyActs = [
     name: 'assemble',
     bounty: 3000,
     description:
-      'Flood the board with 4 characters in a chain play (e.g. ST-13 Dadan and Film package)',
+      'Flood the board with 4 characters in one chain play (e.g. ST-13 Dadan and Film package)',
     category: 'Generic'
   },
   {
     name: 'sadge',
     bounty: 5000,
-    description: 'One of your Ace characters gets K.O.d',
+    description: 'One of your Portgas D. Ace characters gets K.O.d',
     category: 'Generic'
   }
 ];
