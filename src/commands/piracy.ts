@@ -1,20 +1,17 @@
 import { SlashCommandBuilder, ChatInputCommandInteraction } from 'discord.js';
 import * as database from '../utils/database';
 import * as poster from '../utils/poster';
-import { PiracyActs, BountiesDescription, Bounties } from './piracy-acts';
+import { PiracyActs } from './piracy-acts';
 
 const PiracyCommand = new SlashCommandBuilder()
   .setName('piracy')
   .setDescription('Report an act of piracy');
 
-for (let index = 0; index < PiracyActs.length; index++) {
-  const act = PiracyActs[index];
-  const description = BountiesDescription[index];
-
+PiracyActs.forEach((act) => {
   PiracyCommand.addSubcommand((subcommand) =>
     subcommand
-      .setName(act)
-      .setDescription(description)
+      .setName(act.name)
+      .setDescription(act.description)
       .addUserOption((option) =>
         option
           .setName('username')
@@ -22,7 +19,7 @@ for (let index = 0; index < PiracyActs.length; index++) {
           .setRequired(true)
       )
   );
-}
+});
 
 module.exports = {
   data: PiracyCommand,
@@ -31,24 +28,29 @@ module.exports = {
     await interaction.deferReply();
 
     const commandUsed = interaction.options.getSubcommand();
-    const bountyIncrease = Bounties.get(commandUsed);
+    const act = PiracyActs.find((act) => act.name === commandUsed);
 
-    if (!bountyIncrease) {
-      interaction.editReply('Something went wrong updating bounty');
+    if (!act) {
+      interaction.editReply('Cannot find the piracy act - try again later');
       return;
     }
+
     const username = interaction.options.getUser('username')?.username;
     if (!username) {
-      interaction.editReply(`No such user ${username}, please try again`);
+      interaction.editReply(`No such user ${username} - try again later`);
       return;
     }
-    const newBounty = await database.updateBounty(username, bountyIncrease);
+
+    const newBounty = await database.updateBounty(username, act.bounty);
+    // the pirate name on the board might not be the same as their discord username... I think (?)
     const pirateName = await database.getPirateName(username);
     const image = await database.getImageUrl(username);
 
     if (!pirateName || !image || !newBounty) {
       console.log('Failure interacting with database');
-      interaction.editReply('Something went wrong updating bounty');
+      interaction.editReply(
+        'Something went wrong updating bounty value for user - try again later'
+      );
       return;
     }
 
@@ -60,7 +62,7 @@ module.exports = {
 
     if (newPosterURL.length === 0) {
       console.log('Was not able to generate poster');
-      interaction.editReply('Something went wrong updating bounty');
+      interaction.editReply('Something went wrong updating bounty poster for user - try again later');
       return;
     }
 
