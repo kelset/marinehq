@@ -10,7 +10,7 @@
     "beta_test": "npx tsc && npm run start"
   },
   "engines": {
-    "node": "18.9.0"
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "discord.js": "^14.13.0",

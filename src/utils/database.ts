@@ -94,7 +94,7 @@ async function updateBounty(
     const sql = postgres(DATABASE_URL, { ssl: 'require' });
     const data =
       await sql`update pirates set bounty = bounty + ${increase} where username=${name}
-    
+
     returning *`;
     if (data.length === 1) {
       return data[0].bounty; // new bounty
@@ -114,7 +114,7 @@ async function updatePoster(
     const sql = postgres(DATABASE_URL, { ssl: 'require' });
     const data =
       await sql`update pirates set poster_url = ${newURL} where username=${name}
-    
+
     returning *`;
     if (data.length === 1) {
       return data[0].poster_url;
@@ -134,7 +134,7 @@ async function updateOGImage(
     const sql = postgres(DATABASE_URL, { ssl: 'require' });
     const data =
       await sql`update pirates set image_url = ${newURL} where username=${name}
-    
+
     returning *`;
     if (data.length === 1) {
       return data[0].image_url;
